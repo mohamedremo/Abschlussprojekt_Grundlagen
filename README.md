@@ -16,7 +16,7 @@ Um das Programm zu installieren und auszuführen, folge diesen Schritten:
 
 1. Klone das Repository von GitHub:
     ```bash
-    git clone [GITHUB_LINK]
+    git clone [https://github.com/mohamedremo/Abschlussprojekt_Grundlagen.git]
     ```
 2. Stelle sicher, dass du OpenJDK 22 installiert hast.
 
