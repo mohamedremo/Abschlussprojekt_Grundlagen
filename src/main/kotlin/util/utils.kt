@@ -64,7 +64,7 @@ fun emojiAnimate(emoji:String){
 fun backMusic(): Thread{
     return Thread{
         val clip = AudioSystem.getClip()
-        val stream = AudioSystem.getAudioInputStream(File("src/main/kotlin/util/files/DRAW2.wav"))
+        val stream = AudioSystem.getAudioInputStream(File("src/main/kotlin/util/files/backgroundMusic.wav"))
         clip.open(stream)
         clip.loop(Clip.LOOP_CONTINUOUSLY)
     }
