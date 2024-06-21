@@ -166,6 +166,10 @@ var S_NOT_18 = "🔞Du bist leider nicht alt genug! Komm wieder wenn du 18 bist!
 
 var S_FULL = "Wir sind leider zu voll komm in einer Stunde wieder!⏳"
 
+var S_DISGRACED = "${RED}Du hast dir voll in die Hose gemacht und wirst aus dem Pub geschmissen..$RESET\n" +
+        "${YELLOW}Du zahlst 10 € Reinigungsgebühren und hast jeden neben dir den Abend versaut...😂$RESET\n" +
+        "CIAOOOO!"
+
 fun S_WHATS_NEXT(customer:Customer) = "$BOLD$BRIGHTPURPLE---------------------- M E N Ü ----------------------$RESET\n" +
         "${BOLD}${GREEN}Was möchtest du als nächstes tun $UNDERLINE${customer.name}$RESET ?\n" +
         "Geld: $UNDERLINE${String.format("%.2f",customer.money)}€$RESET - Treuepunkte: $UNDERLINE${customer.truePoints}$RESET - Uno Wins: $UNDERLINE${customer.unoWins}$RESET"

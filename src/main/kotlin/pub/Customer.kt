@@ -86,6 +86,7 @@ class Customer(
             emojiAnimate("🚰")
             println(S_CUS_PROMILLS)
             this.alcoholLevel -= 10
+            this.bladder += 5
             println(S_CUS_PROMILLS2(this))
             stopL()
         }else {

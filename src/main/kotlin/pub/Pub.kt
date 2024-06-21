@@ -25,12 +25,12 @@ import kotlin.system.exitProcess
 
 open class Pub (
     var visitors: MutableList<Customer> = mutableListOf(
-        Customer("Konsti", 20, alcoholLevel = 25),
-        Customer("Karl", 65, alcoholLevel = 20),
-        Customer("Mark Egal", 20, alcoholLevel = 75),
-        Customer("Max Mustermann", 18, alcoholLevel = 30, nickname = "Maxi", password = "Maxi007"),
+        Customer("Konsti", 20, alcoholLevel = 25, password = "Konsti007", nickname = "Konsti"),
+        Customer("Karl", 65, alcoholLevel = 20, password = "Karl007", nickname = "Karl"),
+        Customer("Mark Egal", 20, alcoholLevel = 75, password = "Mark007", nickname = "Mark"),
+        Customer("Max Mustermann", 18, alcoholLevel = 30,password = "Maxi007", nickname = "Maxi"),
 
-    ),
+        ),
     var userData: MutableMap<String, String> = mutableMapOf(),
     var menu: MutableList<Product> = mutableListOf(
 
@@ -115,9 +115,7 @@ open class Pub (
         space()
         println(S_WHATS_NEXT(customer).center())
         if (customer.bladder >= 40){
-            println("${RED}Du hast dir voll in die Hose gemacht und wirst aus dem Pub geschmissen..$RESET\n" +
-                    "${YELLOW}Du zahlst 10 € Reinigungsgebühren und hast jeden neben dir den Abend versaut...😂$RESET\n" +
-                    "CIAOOOO!")
+            println(S_DISGRACED)
             customer.money -= 10
             startPub()
         }

@@ -26,9 +26,7 @@ class Uno {
         println(S_GAME_ROUND.center())
         sound("UNO").start()
         stopL()
-        Value.entries.forEach { value ->
-            Color.entries.forEach { color ->
-                deck.add(Card(color, value))}}
+        Value.entries.forEach { value -> Color.entries.forEach { color -> deck.add(Card(color, value))}}
         deck.shuffle() // Deck nach dem Erstellen mischen.
         println(S_GAME_MIX.center())
         stopL()
@@ -252,7 +250,6 @@ class Uno {
             }
         }
     }
-
 }
 
 
